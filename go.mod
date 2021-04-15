@@ -18,6 +18,7 @@ require (
 	github.com/coreos/go-systemd v0.0.0-20190719114852-fd7a80b32e1f // indirect
 	github.com/corpix/uarand v0.1.1 // indirect
 	github.com/dchest/safefile v0.0.0-20151022103144-855e8d98f185 // indirect
+	github.com/eselyavka/go-grpc-optionaltls-creds v0.0.0-20210415204445-eada0cdee9d4 // indirect
 	github.com/evanphx/json-patch v4.5.0+incompatible
 	github.com/go-critic/go-critic v0.4.0 // indirect
 	github.com/go-sql-driver/mysql v1.5.0
@@ -25,7 +26,7 @@ require (
 	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
 	github.com/golang/groupcache v0.0.0-20190702054246-869f871628b6 // indirect
 	github.com/golang/mock v1.3.1
-	github.com/golang/protobuf v1.3.2
+	github.com/golang/protobuf v1.4.2
 	github.com/golang/snappy v0.0.0-20180518054509-2e65f85255db
 	github.com/golangci/gocyclo v0.0.0-20180528144436-0a533e8fa43d // indirect
 	github.com/golangci/golangci-lint v1.21.0 // indirect
@@ -80,14 +81,13 @@ require (
 	golang.org/x/crypto v0.0.0-20191205180655-e7c4368fe9dd
 	golang.org/x/lint v0.0.0-20190409202823-959b441ac422
 	golang.org/x/net v0.0.0-20190926025831-c00fd9afed17
-	golang.org/x/oauth2 v0.0.0-20190604053449-0f29369cfe45
+	golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d
 	golang.org/x/sys v0.0.0-20191218084908-4a24b4065292 // indirect
 	golang.org/x/text v0.3.2
 	golang.org/x/time v0.0.0-20190308202827-9d24e82272b4
 	golang.org/x/tools v0.0.0-20191219041853-979b82bfef62
 	google.golang.org/api v0.9.0
-	google.golang.org/genproto v0.0.0-20190926190326-7ee9db18f195 // indirect
-	google.golang.org/grpc v1.24.0
+	google.golang.org/grpc v1.29.1
 	gopkg.in/DataDog/dd-trace-go.v1 v1.17.0
 	gopkg.in/ldap.v2 v2.5.0
 	gotest.tools v2.2.0+incompatible
