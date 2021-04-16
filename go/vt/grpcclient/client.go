@@ -20,7 +20,7 @@ package grpcclient
 
 import (
 	"flag"
-        "github.com/eselyavka/go-grpc-optionaltls-creds/optionaltls"
+	"github.com/eselyavka/go-grpc-optionaltls-creds/optionaltls"
 
 	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	grpc_prometheus "github.com/grpc-ecosystem/go-grpc-prometheus"
