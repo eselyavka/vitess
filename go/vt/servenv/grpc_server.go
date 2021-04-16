@@ -23,6 +23,7 @@ import (
 	"net"
 	"time"
 
+	"github.com/eselyavka/go-grpc-optionaltls-creds/optionaltls"
 	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	grpc_prometheus "github.com/grpc-ecosystem/go-grpc-prometheus"
 	"vitess.io/vitess/go/trace"
@@ -129,7 +130,7 @@ func createGRPCServer() {
 		}
 
 		// create the creds server options
-		creds := credentials.NewTLS(config)
+		creds := optionaltls.New(credentials.NewTLS(config))
 		opts = []grpc.ServerOption{grpc.Creds(creds)}
 	}
 	// Override the default max message size for both send and receive

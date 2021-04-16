@@ -20,6 +20,7 @@ package grpcclient
 
 import (
 	"flag"
+	"github.com/eselyavka/go-grpc-optionaltls-creds/optionaltls"
 
 	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	grpc_prometheus "github.com/grpc-ecosystem/go-grpc-prometheus"
@@ -124,7 +125,7 @@ func SecureDialOption(cert, key, ca, name string) (grpc.DialOption, error) {
 	}
 
 	// Create the creds server options.
-	creds := credentials.NewTLS(config)
+	creds := optionaltls.New(credentials.NewTLS(config))
 	return grpc.WithTransportCredentials(creds), nil
 }
 
